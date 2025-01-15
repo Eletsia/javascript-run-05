@@ -7,10 +7,13 @@
  *
  */
 
-function sum() {}
+function sum(a,b,c) {
+    return a+b+c;
+}
 
 // TODO: 아래 코드를 작성하세요.
-let callResult;
-let applyResult;
-
+let callResult = sum.call("",1,2,3);
+console.log(callResult);
+let applyResult = sum.apply("",[1,2,3]);
+console.log(applyResult);
 export { sum, callResult, applyResult };
